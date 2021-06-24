@@ -7,7 +7,8 @@ https://gist.github.com/zuzzas/a1695344162ac7fa124e15855ce0768f
 ISO boot tested on ESXi 6.7u3 using bios boot.
 
 [The Journey](#the-journey)
-
+[Using the script](#using-the-script)
+[Run the installer](#run-the-installer)
 
 # The Journey
 There isn't very extensive documentation on re-mastering debian ISOs and the documentation that's there isn't very clear. Hopefully this clears up some things I've learned when trying to make a preseeded debian ISO.
@@ -18,11 +19,11 @@ That was unsuccessful.
 The approach that worked for me was adding the preseed file in the root directory and editing boot parameters inside `isolinux/isolinux.cfg` to use it.
 There were other scripts and guides that modified `isolinux/txt.cfg` to include the preseed file but after many hours of failure, it seemed like it wasn't using txt.cfg on boot.
 
-## Using the script
-### Prepare the preseed.cfg file.
+# Using the script
+## Prepare the preseed.cfg file.
 Use the `example-preseed.cfg` file to make a `preseed.cfg` file and modify it to suit your needs. If you already have one, just copy it to the working directory. If you have never made a preseed.cfg file, it takes a little bit of research to figure out exactly what each line does.
 
-### Prepare the isolinux.cfg file
+## Prepare the isolinux.cfg file
 Modify the `isolinux.cfg` file with your default hostname and domain. If those config lines are removed, you want to be prompted during install.
 ```
 ...
@@ -38,7 +39,7 @@ label install
 ```
 Change the `netcfg/get_hostname` and `netcfg/get_domain` values to fit your environment.
 
-### Customize the make-iso.sh script
+## Customize the make-iso.sh script
 Change these values to suit your needs:
 ```
 ISOARCH="amd64"
@@ -57,7 +58,7 @@ ISODIR_WRITE="$ISODIR-rw/"
 | ISODIR | the directory name to mount the downloaded iso to
 | ISODIR_WRITE | the directory name of the copied iso mount directory. By default, the way the script mounts the iso makes the entire directory and its contents readonly. The script copies the entire directory to a new one that is writable.
 
-## Run the installer
+# Run the installer
 Run the script using 
 ```./make-iso```
 The script takes a few seconds to complete and you w
