@@ -6,8 +6,10 @@ https://gist.github.com/zuzzas/a1695344162ac7fa124e15855ce0768f
 
 ISO boot tested on ESXi 6.7u3 using bios boot.
 
+# Table of Contents
 * [The Journey](#the-journey)
 * [Using the script](#using-the-script)
+    * [Prepare the preseed.cfg file](#prepare-the-preseed-cfg-file)
 * [Run the installer](#run-the-installer)
 
 # The Journey
