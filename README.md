@@ -65,7 +65,4 @@ ISODIR_WRITE="$ISODIR-rw/"
 # Run the installer
 Run the script using 
 ```./make-iso```
-The script takes a few seconds to complete and you w
-
-
-[Headers](#the-journey)
+The script takes a few seconds to complete and you will be left with an output file specified in the make-iso.sh script. It defaults to the name of the iso with autoinstall prepended to it. `ie: autoinstall-debian-10.10.01-amd64-netinst.iso`
