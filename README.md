@@ -9,7 +9,9 @@ ISO boot tested on ESXi 6.7u3 using bios boot.
 # Table of Contents
 * [The Journey](#the-journey)
 * [Using the script](#using-the-script)
-    * [Prepare the preseed.cfg file](#prepare-the-preseed-cfg-file)
+    * [Prepare the preseed.cfg file](#prepare-the-preseedcfg-file)
+    * [Prepare the isolinux.cfg file](#prepare-the-isolinuxcfg-file)
+    * [Customize the make-iso.sh script](#customize-the-make-isosh-script)
 * [Run the installer](#run-the-installer)
 
 # The Journey
