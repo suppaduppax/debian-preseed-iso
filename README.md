@@ -6,9 +6,9 @@ https://gist.github.com/zuzzas/a1695344162ac7fa124e15855ce0768f
 
 ISO boot tested on ESXi 6.7u3 using bios boot.
 
-[The Journey](#the-journey)
-[Using the script](#using-the-script)
-[Run the installer](#run-the-installer)
+* [The Journey](#the-journey)
+* [Using the script](#using-the-script)
+* [Run the installer](#run-the-installer)
 
 # The Journey
 There isn't very extensive documentation on re-mastering debian ISOs and the documentation that's there isn't very clear. Hopefully this clears up some things I've learned when trying to make a preseeded debian ISO.
