@@ -6,7 +6,10 @@ https://gist.github.com/zuzzas/a1695344162ac7fa124e15855ce0768f
 
 ISO boot tested on ESXi 6.7u3 using bios boot.
 
-## The Journey
+[The Journey](#the-journey)
+
+
+# The Journey
 There isn't very extensive documentation on re-mastering debian ISOs and the documentation that's there isn't very clear. Hopefully this clears up some things I've learned when trying to make a preseeded debian ISO.
 
 I've tried following the wiki for embedding the preseed file inside initrd using this guide: `https://wiki.debian.org/DebianInstaller/Preseed/EditIso`\
@@ -58,3 +61,6 @@ ISODIR_WRITE="$ISODIR-rw/"
 Run the script using 
 ```./make-iso```
 The script takes a few seconds to complete and you w
+
+
+[Headers](#the-journey)
